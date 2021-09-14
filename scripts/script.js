@@ -95,6 +95,7 @@ function getNextPalindromeDate(dateObj) {
 }
 
 function validateBirthdayPalindrome() {
+    output.classList.add('-active');
     if(validateInputFields()) {
         let dateObj = getDateObject(dateOfBirth.value);
         let [isPalindromeFlag, formatIndex] = isPalindromeForAllDateFormat(dateObj);
