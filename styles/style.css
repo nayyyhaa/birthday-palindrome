@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-color: #89ade4;
+    --secondary-color: #5793ec;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    min-height: 15vh;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 65vh;
+}
+
+input, button {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 1rem 0;
+    transition: all 0.1s ease-in;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+i {
+    cursor: pointer;
+}
+
+#privacyAlert {
+    border: 1px solid var(--secondary-color);
+    width: 50vw;
+    margin: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.-active {
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    min-height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    border-radius: 20% 0;
+}
+
+.output {
+    width: 80%;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0;
+}
+
+footer {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ul li {
+    list-style: none;
+}
+
