@@ -50,6 +50,7 @@ button {
     cursor: pointer;
     border-radius: 1rem 0;
     transition: all 0.1s ease-in;
+    margin: 1rem 0;
 }
 
 button:hover {
@@ -62,10 +63,15 @@ i,a {
     color: white;
 }
 
+.fa-times {
+    color: var(--secondary-color);
+}
+
 #privacyAlert {
-    border: 1px solid var(--secondary-color);
-    width: 50vw;
+    border: 2.5px solid var(--secondary-color);
     margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
     text-align: center;
     display: none;
 }
@@ -86,6 +92,8 @@ i,a {
     background-color: var(--primary-color);
     border-radius: 20% 0;
     color: white;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .output {
@@ -116,5 +124,16 @@ ul {
 
 ul li {
     list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    label {
+        flex-direction: column;
+    }
+    
 }
 
