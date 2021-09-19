@@ -99,10 +99,10 @@ function validateBirthdayPalindrome() {
     if(validateInputFields()) {
         let dateObj = getDateObject(dateOfBirth.value);
         let [isPalindromeFlag, formatIndex] = isPalindromeForAllDateFormat(dateObj);
-        if(isPalindromeFlag) output.innerText = `Yay! Your Birthday is a Palindrome in format ${dateFormatArray[formatIndex]}`;
+        if(isPalindromeFlag) output.innerText = `🥳Yay! Your Birthday is a Palindrome in format ${dateFormatArray[formatIndex]}`;
         else {
             let [count, nextDate, formatIndex] = getNextPalindromeDate(dateObj);
-            output.innerText = `Oopsie! Your birthday is not a Palindrome. it's ${count} days away from ${nextDate.day}-${nextDate.month}-${nextDate.year} in format ${dateFormatArray[formatIndex]}`;
+            output.innerText = `🥺Oopsie! Your birthday is not a Palindrome. it's ${count} days away from ${nextDate.day}-${nextDate.month}-${nextDate.year} in format ${dateFormatArray[formatIndex]}`;
         }
     }
     else output.innerText = 'Please enter valid Inputs!';
