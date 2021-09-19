@@ -1,4 +1,4 @@
-# Palindrome-Birthday
+# Palindrome Birthday 🤩
 
 - This is Vanilla Js project to validate if your birthday is a palindrome a not.
 
@@ -12,3 +12,9 @@
 
 ## Tech stack used
 `HTML`, `CSS`, and `JavaScript`
+
+Checkout the live app here -> https://bdayreverse.netlify.app/
+
+> **Disclaimer:** 
+> This app is only for fun purpose. We are not storing your data
+
